@@ -14,7 +14,7 @@
 	<key>foldingStartMarker</key>
 	<string>\{\s*$</string>
 	<key>name</key>
-	<string>f5 iRule (tcl)</string>
+	<string>iRule</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -112,7 +112,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.f5_irule</string>
+	<string>source.irule</string>
 	<key>uuid</key>
 	<string>e7058651-8802-4348-bd4f-a13066a210b3</string>
 </dict>

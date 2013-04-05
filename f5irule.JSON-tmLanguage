@@ -1,5 +1,5 @@
-{ "name": "f5 iRule (tcl)",
-  "scopeName": "source.f5_irule",
+{ "name": "iRule",
+  "scopeName": "source.irule",
   "fileTypes": [
     "irule", 
     "_irule.tcl"

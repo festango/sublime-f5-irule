@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[when ${1:EVENT_NAME} {
+  ${2}
+}
+]]></content>
+    <tabTrigger>when</tabTrigger>
+    <scope>source.irule</scope>
+    <description>when EVENT_NAME { } ...</description>
+</snippet>
