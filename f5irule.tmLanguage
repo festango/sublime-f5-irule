@@ -5,7 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>irule</string>
-		<string>_irule.tcl</string>
+		<string>_irule.irule</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>^WHEN_</string>

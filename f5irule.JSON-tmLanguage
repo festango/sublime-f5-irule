@@ -2,7 +2,7 @@
   "scopeName": "source.irule",
   "fileTypes": [
     "irule", 
-    "_irule.tcl"
+    "_irule.irule"
   ],
   "firstLineMatch": "^WHEN_",
   "foldingStartMarker": "\\{\\s*$",
@@ -33,7 +33,7 @@
           "name": "keyword.other.irule"
         },
         "2": {
-          "name": "keyword.name.function.irule"
+          "name": "keyword.name.event.irule"
         }
       }
     },
