@@ -1,0 +1,70 @@
+{ "name": "f5 iRule (tcl)",
+  "scopeName": "source.f5_irule",
+  "fileTypes": [
+    "irule", 
+    "_irule.tcl"
+  ],
+  "firstLineMatch": "^WHEN_",
+  "foldingStartMarker": "\\{\\s*$",
+  "foldingEndMarker": "^\\s*\\}",
+  "patterns": [
+    {
+      "begin": "(?<=^|;)\\s*((#))",
+      "beginCaptures": {
+        "1": {
+          "name": "comment.line.number-sign.irule"
+        },
+        "2": {
+          "name": "punctuation.definition.comment.irule"
+        }
+      },
+      "contentName": "comment.line.number-sign.irule",
+      "end": "\\n",
+      "patterns": [
+        {
+          "match": "(\\\\\\\\|\\\\\\n)"
+        }
+      ]
+    },
+    {
+      "match": "^\\s*(when)\\s+([^\\s]+)",
+      "captures": {
+        "1": {
+          "name": "keyword.other.irule"
+        },
+        "2": {
+          "name": "keyword.name.function.irule"
+        }
+      }
+    },
+    {
+      "match": "(?<=|[\\[{;])\\s*(if|while|for|catch|return|break|continue|switch|exit|foreach)\\b",
+      "captures": {
+        "1": {
+          "name": "keyword.control.irule"
+        }
+      }
+    },
+    {
+      "match": "(?<=^|})\\s*(then|elsif|else)\\b",
+      "captures": {
+        "1": {
+          "name": "keyword.control.irule"
+        }
+      }
+    },
+    {
+      "match": "\\b([0-9]+)\\b",
+      "captures": {
+        "0": { "name": "keyword.other.irule" }
+      }
+    },
+    {
+      "match": "\\b\\$\\w+\\b",
+      "captures": {
+        "0": { "name": "pumctuation.definition.variable.irule" }
+      }
+    }
+  ],
+  "uuid": "e7058651-8802-4348-bd4f-a13066a210b3"
+}
