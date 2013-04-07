@@ -1,5 +1,5 @@
 {
-  "scope": "source.irule keyword.name.command.source.irule",
+  "scope": "source.irule keyword.name.command.irule",
   "completions":
   [
   "ACCESS::acl",

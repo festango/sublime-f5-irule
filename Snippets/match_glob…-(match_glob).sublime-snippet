@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[match_glob "${1: Pattern}"]]></content>
+    <tabTrigger>match_glob</tabTrigger>
+    <scope>source.irule</scope>
+    <description>match_glob...</description>
+</snippet>

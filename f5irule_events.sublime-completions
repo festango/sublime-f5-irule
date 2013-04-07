@@ -1,5 +1,5 @@
 {
-  "scope": "keyword.name.event.source.irule",
+  "scope": "keyword.name.event.irule",
   "completions":
   [
     "ACCESS_ACL_ALLOWED",

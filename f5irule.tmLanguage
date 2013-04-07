@@ -56,11 +56,23 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.name.event.source.irule</string>
+					<string>keyword.name.event.irule</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>^\s*(when)\s+([^\s]+)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.irule</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?&lt;=|[\[{;])\s*(contains|end_with|equals|matches_glob|matches_regex|starts_with|and|not|or)\b</string>
 		</dict>
 		<dict>
 			<key>captures</key>

@@ -36,10 +36,32 @@
           "name": "keyword.control.irule"
         },
         "2": {
-          "name": "keyword.name.event.source.irule"
+          "name": "keyword.name.event.irule"
         }
       }
     },
+
+    {
+      "match": "^\\s*(HTTP::header)\\s+([^\\s]+)",
+      "captures": {
+        "1": {
+          "name": "keyword.control.irule"
+        },
+        "2": {
+          "name": "command.httpheader.irule"
+        }
+      }
+    },
+
+    {
+      "match": "(?<=|[\\[{;])\\s*(contains|end_with|equals|matches_glob|matches_regex|starts_with|and|not|or)\\b",
+      "captures": {
+        "1": {
+          "name": "keyword.operator.irule"
+        }
+      }
+    },
+
 
     {
       "match": "(?<=|[\\[{;])\\s*(if|while|for|catch|return|break|continue|switch|exit|foreach)\\b",
@@ -73,7 +95,7 @@
     {
       "captures": {
         "1": {
-          "name": "keyword.other.tcl"
+          "name": "keyword.other.irule"
         }
       }, 
       "match": "(?<=^|[\\[{;])\\s*(after|append|array|auto_execok|auto_import|auto_load|auto_mkindex|auto_mkindex_old|auto_qualify|auto_reset|bgerror|binary|cd|clock|close|concat|dde|encoding|eof|error|eval|exec|expr|fblocked|fconfigure|fcopy|file|fileevent|filename|flush|format|gets|glob|global|history|http|incr|info|interp|join|lappend|library|lindex|linsert|list|llength|load|lrange|lreplace|lsearch|lset|lsort|memory|msgcat|namespace|open|package|parray|pid|pkg::create|pkg_mkIndex|proc|puts|pwd|re_syntax|read|registry|rename|resource|scan|seek|set|socket|SafeBase|source|split|string|subst|Tcl|tcl_endOfWord|tcl_findLibrary|tcl_startOfNextWord|tcl_startOfPreviousWord|tcl_wordBreakAfter|tcl_wordBreakBefore|tcltest|tclvars|tell|time|trace|unknown|unset|update|uplevel|upvar|variable|vwait)\\b"
@@ -82,7 +104,7 @@
       "begin": "(?<=^|[\\[{;])\\s*(regexp|regsub)\\b\\s*", 
       "beginCaptures": {
         "1": {
-          "name": "keyword.other.tcl"
+          "name": "keyword.other.irule"
         }
       }, 
       "comment": "special-case regexp/regsub keyword in order to handle the expression", 
@@ -90,7 +112,7 @@
       "patterns": [
         {
           "match": "\\\\(?:.|\\n)", 
-          "name": "constant.character.escape.tcl"
+          "name": "constant.character.escape.irule"
         }, 
         {
           "comment": "switch for regexp", 
@@ -122,16 +144,16 @@
       "begin": "\"", 
       "beginCaptures": {
         "0": {
-          "name": "punctuation.definition.string.begin.tcl"
+          "name": "punctuation.definition.string.begin.irule"
         }
       }, 
       "end": "\"", 
       "endCaptures": {
         "0": {
-          "name": "punctuation.definition.string.end.tcl"
+          "name": "punctuation.definition.string.end.irule"
         }
       }, 
-      "name": "string.quoted.double.tcl", 
+      "name": "string.quoted.double.irule", 
       "patterns": [
         {
           "include": "#escape"
