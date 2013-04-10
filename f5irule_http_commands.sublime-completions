@@ -1,0 +1,19 @@
+{
+  "scope": "source.irule, keyword.name.command.irule",
+  "completions":
+  [
+    "values",
+    "names",
+    "count",
+    "index",
+    "exists",
+    "insert",
+    "lws",
+    "is_keepalive",
+    "is_redirect",
+    "remove",
+    "insert_modssl_fields",
+    "sanitize"
+  ]
+}
+
