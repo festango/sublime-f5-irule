@@ -68,11 +68,45 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>keyword.control.irule</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>command.httpheader.irule</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*(HTTP::header)\s([^\s]+)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.irule</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>command.httpheader.irule</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*(HTTP::header)\s+([^\s]+)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>keyword.operator.irule</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?&lt;=|[\[{;])\s*(contains|end_with|equals|matches_glob|matches_regex|starts_with|and|not|or)\b</string>
+			<string>(?&lt;=|[\[{;])\s*(contains|ends_with|equals|matches_glob|matches_regex|starts_with|and|not|or)\b</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -128,7 +162,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.other.tcl</string>
+					<string>keyword.other.irule</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -142,7 +176,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.other.tcl</string>
+					<string>keyword.other.irule</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -155,7 +189,7 @@
 					<key>match</key>
 					<string>\\(?:.|\n)</string>
 					<key>name</key>
-					<string>constant.character.escape.tcl</string>
+					<string>constant.character.escape.irule</string>
 				</dict>
 				<dict>
 					<key>comment</key>
@@ -202,7 +236,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.tcl</string>
+					<string>punctuation.definition.string.begin.irule</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -212,11 +246,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.tcl</string>
+					<string>punctuation.definition.string.end.irule</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.double.tcl</string>
+			<string>string.quoted.double.irule</string>
 			<key>patterns</key>
 			<array>
 				<dict>

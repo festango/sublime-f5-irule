@@ -1,5 +1,5 @@
 {
-  "scope": "source.irule, keyword.name.command.irule",
+  "scope": "command.httpheader.irule",
   "completions":
   [
     "values",

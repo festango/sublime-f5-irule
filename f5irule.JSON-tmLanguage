@@ -42,6 +42,18 @@
     },
 
     {
+      "match": "^\\s*(HTTP::header)\\s([^\\s]+)",
+      "captures": {
+        "1": {
+          "name": "keyword.control.irule"
+        },
+        "2": {
+          "name": "command.httpheader.irule"
+        }
+      }
+    },
+
+    {
       "match": "^\\s*(HTTP::header)\\s+([^\\s]+)",
       "captures": {
         "1": {
@@ -54,14 +66,13 @@
     },
 
     {
-      "match": "(?<=|[\\[{;])\\s*(contains|end_with|equals|matches_glob|matches_regex|starts_with|and|not|or)\\b",
+      "match": "(?<=|[\\[{;])\\s*(contains|ends_with|equals|matches_glob|matches_regex|starts_with|and|not|or)\\b",
       "captures": {
         "1": {
           "name": "keyword.operator.irule"
         }
       }
     },
-
 
     {
       "match": "(?<=|[\\[{;])\\s*(if|while|for|catch|return|break|continue|switch|exit|foreach)\\b",
