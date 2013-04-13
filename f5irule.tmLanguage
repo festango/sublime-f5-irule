@@ -102,23 +102,11 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator.irule</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(?&lt;=|[\[{;])\s*(contains|ends_with|equals|matches_glob|matches_regex|starts_with|and|not|or)\b</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
 					<string>keyword.control.irule</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?&lt;=|[\[{;])\s*(if|while|for|catch|return|break|continue|switch|exit|foreach)\b</string>
+			<string>(?&lt;=^|[\[{;])\s*(if|while|for|catch|return|break|continue|switch|exit|foreach|contains|ends_with|equals|matches_glob|matches_regex|starts_with|and|not|or)\b</string>
 		</dict>
 		<dict>
 			<key>captures</key>

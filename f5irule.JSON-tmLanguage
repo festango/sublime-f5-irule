@@ -66,16 +66,7 @@
     },
 
     {
-      "match": "(?<=|[\\[{;])\\s*(contains|ends_with|equals|matches_glob|matches_regex|starts_with|and|not|or)\\b",
-      "captures": {
-        "1": {
-          "name": "keyword.operator.irule"
-        }
-      }
-    },
-
-    {
-      "match": "(?<=|[\\[{;])\\s*(if|while|for|catch|return|break|continue|switch|exit|foreach)\\b",
+      "match": "(?<=^|[\\[{;])\\s*(if|while|for|catch|return|break|continue|switch|exit|foreach|contains|ends_with|equals|matches_glob|matches_regex|starts_with|and|not|or)\\b",
       "captures": {
         "1": {
           "name": "keyword.control.irule"
