@@ -12,7 +12,7 @@ Open up a command line in the Packages/ folder of your Sublime user folder and e
 ```
 # For MacOS
 cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
-git clone git://github.com/SublimeText/RSpec.git
+git clone https://github.com/festango/sublime-f5-irule.git
 ```
 
 
