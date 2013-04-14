@@ -1,8 +1,6 @@
 f5 iRule plugin for Sublime Text 2
 ================
 
-## Description
-
 Sublime Text 2 plugin for iRule development includin syntax highlighting, auto completion and so on.
 
 ## Installation
